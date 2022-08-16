@@ -1,0 +1,153 @@
+@import url(./assets/css/main.css);
+@import url(./assets/css/reset.css);
+@import url(./assets/css/variables.css);
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+  
+  
+  
+  *, *::before, *::after { box-sizing: border-box; }
+  
+  
+  html { font-family: var(--ff-inter); }
+  
+  
+  
+  h1, h2, h3, h4, h5, h6 { color: var(--white); }
+  
+  
+  
+  body {
+    background: var(black);
+    color: var(--off-white);
+    -webkit-font-smoothing: antialiased;
+  }
+  header, nav {  background-color: rgba(0, 0, 0, 0.3); }
+.navbar,
+.banner,
+.movies,
+.category,
+.live {
+  padding: 0 var(--px);
+}
+.section-heading {
+    font-size: var(--section-heading);
+    font-weight: var(--fw-5);
+    margin-bottom: 60px;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: auto;
+  }
+  
+  .navbar {
+    height: 100px;
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+  }
+  
+  .navbar-menu-btn { display: none; }
+  
+  nav { margin-right: 200px; }
+  
+  .navbar-nav { display: flex; }
+  
+  .navbar-nav li:not(:last-child) { margin-right: 60px; }
+  
+  .navbar-link {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-5);
+  }
+  .navbar-brand{
+    width: 100px;
+  }
+  
+  .navbar-link:hover { color: var(--light-azure); }
+  
+  .navbar-actions {
+    display:     flex;
+    align-items: center;
+  }
+  
+  .navbar-form {
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  .navbar-form-search {
+    background: var(--oxford-blue);
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    color: var(--off-white);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-5);
+  }
+  
+  .navbar-form-btn {
+    background: var(--oxford-blue);
+    position: absolute;
+    top:   calc(50% - 10px);
+    right: 10px;
+  }
+  
+  .navbar-form-btn ion-icon,
+  .navbar-search-btn ion-icon {
+    font-size: 20px;
+    color: var(--light-azure);
+    --ionicon-stroke-width: 50px;
+  }
+  
+  .navbar-form-btn:hover ion-icon,
+  .navbar-form-search::placeholder { color: var(--off-white); }
+  
+  .navbar-form-close,
+  .navbar-search-btn { display: none; }
+  
+  .navbar-signin {
+    display:     flex;
+    align-items: center;
+    font-size: var(--fs-sm);
+  }
+  
+  .navbar-signin ion-icon {
+    font-size: 22px;
+    color: var(--light-azure);
+    margin-left: 5px;
+    --ionicon-stroke-width: 30px;
+  }
+  
+  .navbar-signin:hover span { color: var(--light-azure); }
+  :root {
+    --rich-black-fogra-30:   hsl(219, 32%, 10%);
+    --rich-black-fogra-29:   hsl(222, 25%, 10%);
+    --live-indicator:        hsl(0, 79%, 63%);
+    --oxford-blue-50:        hsla(218, 39%, 14%, 0.8);
+    --oxford-blue:           hsl(218, 39%, 14%);
+    --light-azure:           hsl(214, 84%, 56%);
+    --off-white:             hsl(0, 0%, 88%);
+    --yellow:                hsl(45, 100%, 54%);
+    --white:                 hsl(0, 0%, 100%);
+    --azure:                 hsl(211, 100%, 50%);
+  
+   
+    --ff-inter: "Inter", sans-serif;
+  
+    --section-heading: 40px;
+    --fs-lg:           22px;
+    --fs-md:           17px;
+    --fs-sm:           14px;
+    --fs-x-sm:         12px;
+    
+    --fw-7: 700;
+    --fw-6: 600;
+    --fw-5: 500;
+    --px: 120px; 
+  
+  }
+  
